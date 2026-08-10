@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="想认识我，或者聊聊音乐、游戏、旅行、运动，都欢迎！">
+<meta name="theme-color" content="#FDDC02">
+<title>about</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23FDDC02'/><text x='50' y='62' font-family='Arial,sans-serif' font-size='38' font-weight='bold' text-anchor='middle' fill='%23000'>LK</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="reading" id="readingBar"></div>
+<header class="nav">
+  <div class="logo"><span class="logo-sun"></span>Black</div>
+  <div class="nav-right">
+    <nav class="nav-links" id="navLinks">
+      <a href="home.html">🏠 首页</a>
+      <a href="music.html">🎵 音乐</a>
+      <a href="games.html">🎮 游戏</a>
+      <a href="travel.html">✈️ 旅行</a>
+      <a href="sports.html">⚽ 运动</a>
+      <a href="about.html" class="active">💬 关于</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">🌙</button>
+    <button class="burger" id="burgerBtn" aria-label="打开菜单">☰</button>
+  </div>
+</header>
+
+<section class="page-hero" id="top">
+  <div class="page-hero-inner">
+    <div class="kicker2">ABOUT ME</div>
+    <h1>关于我</h1>
+    <div class="title-line"></div>
+    <p class="section-sub">想认识我，或者聊聊音乐、游戏、旅行、运动，都欢迎！</p>
+  </div>
+</section>
+
+<section class="page-content">
+  <div class="page-inner">
+    <a class="back-link" href="home.html">← 返回首页</a>
+
+  <div class="block reveal">
+    <div class="about-card">
+      <h3 class="block-title">关于我</h3>
+      <p>想认识我，或者聊聊音乐、游戏、旅行、运动，都欢迎！</p>
+      <p>我是 Black，这里会看到一个有内容的我：喜欢音乐、游戏、旅行和运动。这个网站，就是我的世界一角。也希望你有机会多去看看这个世界~</p>
+      <div class="contact-chips"><span>B站 · 夜渐离</span></div>
+    </div>
+  </div>
+
+
+  <div class="block reveal guestbook-wrap">
+    <h3 class="block-title">留言板</h3>
+    <p class="block-sub">给我留句话吧，我都会认真看</p>
+    <div class="guestbook">
+      <div class="gb-form">
+        <input class="gb-name" maxlength="12" placeholder="你的昵称（可留空）">
+        <textarea class="gb-msg" rows="3" maxlength="200" placeholder="想说点什么…"></textarea>
+        <button class="gb-send" type="button">✉️ 留言</button>
+      </div>
+      <ul class="gb-list"></ul>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="watermark">Black</div>
+  <h3><span class="t-sun">☀️</span><span class="t-star">✨</span> 很高兴认识你</h3>
+  <p class="f-sub">网站会一直更新，欢迎常来逛逛</p>
+  <div class="f-links">
+    <a class="f-link" href="music.html">🎵 音乐屋</a>
+    <a class="f-link" href="games.html">🎮 游戏厅</a>
+    <a class="f-link" href="travel.html">✈️ 旅行册</a>
+    <a class="f-link" href="sports.html">⚽ 运动场</a>
+  </div>
+  <a class="top-btn" href="#top">回到顶部 ↑</a>
+  <p>个人网站 · 用心记录生活</p>
+</footer>
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

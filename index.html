@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="也希望你有机会多去看看这个世界~">
+<meta name="theme-color" content="#FDDC02">
+<title>Black · 个人网站</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23FDDC02'/><text x='50' y='62' font-family='Arial,sans-serif' font-size='38' font-weight='bold' text-anchor='middle' fill='%23000'>LK</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="reading" id="readingBar"></div>
+<header class="nav">
+  <div class="logo"><span class="logo-sun"></span>Black</div>
+  <div class="nav-right">
+    <nav class="nav-links" id="navLinks">
+      <a href="#/home" class="active">🏠 首页</a>
+      <a href="#/music">🎵 音乐</a>
+      <a href="#/games">🎮 游戏</a>
+      <a href="#/travel">✈️ 旅行</a>
+      <a href="#/sports">⚽ 运动</a>
+      <a href="#/about">💬 关于</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" aria-label="切换深色/浅色模式" title="切换深色/浅色模式">🌙</button>
+    <button class="burger" id="burgerBtn" aria-label="打开菜单">☰</button>
+  </div>
+</header>
+<main>
+<section id="sec-home" class="spa-sec active">
+<section class="hero" id="top">
+  <div class="hero-dots"></div>
+  <div class="sun"></div>
+  <div class="hero-blob"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="kicker anim d1">✦ 你好，欢迎来到我的小站</span>
+      <p class="cursive anim d2">hey there!</p>
+      <h1 class="anim d2">I'm <span class="name">Black</span></h1>
+      <p class="typed-line anim d3"><span id="typed" data-text="这里会看到一个有内容的我"></span></p>
+      <blockquote class="motto anim d4">也希望你有机会多去看看这个世界~</blockquote>
+      <div class="cta anim d5">
+        <a class="btn" href="#cards">开始逛我的小站 <span class="arr">↓</span></a>
+        <a class="btn ghost" href="#/about">更多关于我</a>
+      </div>
+      <div class="stats anim d6"><span class="stat">🎵 国语行走的曲海</span><span class="stat">✈️ 宅家依旧爱远行</span><span class="stat">🎮 游戏人生无止境</span></div>
+    </div>
+    <div class="hero-avatar anim d4">
+      <span class="sticker s1">🎵</span>
+      <span class="sticker s2">🎮</span>
+      <span class="sticker s3">✈️</span>
+      <figure class="polaroid">
+        <div class="photo"><img src="assets/img/avatar.jpg" alt="Black 的头像"></div>
+        <figcaption>Black</figcaption>
+        <small>Keep exploring · 保持探索</small>
+      </figure>
+    </div>
+  </div>
+  <div class="scroll-hint"><i></i>往下滑</div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="mq">
+      <a href="#/music"><span>音乐屋</span></a><a href="#/games"><span>游戏厅</span></a><a href="#/travel"><span>旅行册</span></a><a href="#/sports"><span>运动场</span></a><a href="#/about"><span>关于我</span></a>
+    </div>
+    <div class="mq">
+      <a href="#/music"><span>音乐屋</span></a><a href="#/games"><span>游戏厅</span></a><a href="#/travel"><span>旅行册</span></a><a href="#/sports"><span>运动场</span></a><a href="#/about"><span>关于我</span></a>
+    </div>
+  </div>
+</div>
+
+<section class="cards" id="cards">
+  <div class="section-head reveal">
+    <div class="kicker2">01 · 板块导航</div>
+    <h2>我的小世界</h2>
+    <div class="title-line"></div>
+  </div>
+  <div class="bento">
+
+    <div class="card tilt reveal wide">
+      <span class="num">01</span>
+      <div class="icon c-music"><span class="ic">🎵</span></div>
+      <h3>音乐屋</h3>
+      <p>喜欢的歌手、常听的歌，还有网页背景音乐，点一下就能播。</p>
+      <a class="enter" href="#/music">进入音乐屋 <span class="arr">→</span></a>
+    </div>
+    <div class="card tilt reveal ">
+      <span class="num">02</span>
+      <div class="icon c-game"><span class="ic">🎮</span></div>
+      <h3>游戏厅</h3>
+      <p>喜欢的游戏和战绩，玩家生涯全在这。</p>
+      <a class="enter" href="#/games">进入游戏厅 <span class="arr">→</span></a>
+    </div>
+    <div class="card tilt reveal ">
+      <span class="num">03</span>
+      <div class="icon c-travel"><span class="ic">✈️</span></div>
+      <h3>旅行册</h3>
+      <p>旅行照片墙，点击放大看原图，像一本边走边写的相册。</p>
+      <a class="enter" href="#/travel">进入旅行册 <span class="arr">→</span></a>
+    </div>
+    <div class="card tilt reveal wide2">
+      <span class="num">04</span>
+      <div class="icon c-sport"><span class="ic">⚽</span></div>
+      <h3>运动场</h3>
+      <p>喜欢的运动、照片和实况瞬间，直接播放。</p>
+      <a class="enter" href="#/sports">进入运动场 <span class="arr">→</span></a>
+    </div>
+    <div class="card tilt reveal wide3">
+      <span class="num">05</span>
+      <div class="icon c-about"><span class="ic">💬</span></div>
+      <h3>关于我</h3>
+      <p>想认识我，或者聊聊音乐、游戏、旅行，都欢迎！</p>
+      <a class="enter" href="#/about">进入关于我 <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<div class="home-gb"><div class="home-gb-inner">
+  <div class="block reveal guestbook-wrap">
+    <h3 class="block-title">留言板</h3>
+    <p class="block-sub">给我留句话吧，我都会认真看</p>
+    <div class="guestbook">
+      <div class="gb-form">
+        <input class="gb-name" maxlength="12" placeholder="你的昵称（可留空）">
+        <textarea class="gb-msg" rows="3" maxlength="200" placeholder="想说点什么…"></textarea>
+        <button class="gb-send" type="button">✉️ 留言</button>
+      </div>
+      <ul class="gb-list"></ul>
+    </div>
+  </div>
+</div></div></section>
+<section id="sec-music" class="spa-sec">
+<section class="page-hero" id="top">
+  <div class="page-hero-inner">
+    <div class="kicker2">MY MUSIC</div>
+    <h1>音乐屋</h1>
+    <div class="title-line"></div>
+    <p class="section-sub">喜欢的歌手和他们打动我的歌，还有我的声音。</p>
+  </div>
+</section>
+<section class="page-content"><div class="page-inner"><a class="back-link" href="#/home">← 返回首页</a>
+  <div class="block reveal">
+    <h3 class="block-title">喜欢的歌手</h3>
+    <p class="block-sub">每位歌手，都有一首我觉得<span class="hot-word">最夯的歌曲</span>放在盲盒里推荐给你</p>
+    <div class="pg-grid">
+      <div class="pg-card reveal">
+        <div class="cover-art"><img src="assets/img/music/lin.jpg" alt="林俊杰 专辑封面"></div>
+        <h3>林俊杰</h3>
+        <p>行走的CD不解释</p>
+        <div class="rec-box">
+          <button class="rec-reveal" type="button">🎁 点我开盲盒</button>
+          <span class="rec-song">♪ 推荐 · 达尔文</span>
+        </div>
+      </div>
+      <div class="pg-card reveal">
+        <div class="cover-art"><img src="assets/img/music/gem.jpg" alt="邓紫棋 专辑封面"></div>
+        <h3>邓紫棋</h3>
+        <p>解解喜欢开摩托</p>
+        <div class="rec-box">
+          <button class="rec-reveal" type="button">🎁 点我开盲盒</button>
+          <span class="rec-song">♪ 推荐 · 多远都要在一起</span>
+        </div>
+      </div>
+      <div class="pg-card reveal">
+        <div class="cover-art"><img src="assets/img/music/jay.jpg" alt="周杰伦 专辑封面"></div>
+        <h3>周杰伦</h3>
+        <p>周董的含金量不用多说了吧</p>
+        <div class="rec-box">
+          <button class="rec-reveal" type="button">🎁 点我开盲盒</button>
+          <span class="rec-song">♪ 推荐 · 暗号</span>
+        </div>
+      </div>
+      <div class="pg-card reveal">
+        <div class="cover-art"><img src="assets/img/music/liangbo.jpg" alt="梁博 专辑封面"></div>
+        <h3>梁博</h3>
+        <p>博哥夯中之夯的在玩音乐的好吧</p>
+        <div class="rec-box">
+          <button class="rec-reveal" type="button">🎁 点我开盲盒</button>
+          <span class="rec-song">♪ 推荐 · 出现又离开</span>
+        </div>
+      </div>
+      <div class="pg-card reveal">
+        <div class="cover-art"><img src="assets/img/music/huichun.jpg" alt="回春丹乐队 专辑封面"></div>
+        <h3>回春丹乐队</h3>
+        <p>群像的力量啊</p>
+        <div class="rec-box">
+          <button class="rec-reveal" type="button">🎁 点我开盲盒</button>
+          <span class="rec-song">♪ 推荐 · 鲜花</span>
+        </div>
+      </div>
+      <div class="pg-card reveal">
+        <div class="cover-art"><img src="assets/img/music/mayday.jpg" alt="五月天 专辑封面"></div>
+        <h3>五月天</h3>
+        <p>MAYDAY 演唱会的感染力无需多言</p>
+        <div class="rec-box">
+          <button class="rec-reveal" type="button">🎁 点我开盲盒</button>
+          <span class="rec-song">♪ 推荐 · 温柔</span>
+        </div>
+      </div></div>
+  </div>
+  <div class="block reveal">
+    <div class="quote-line">💬 你喜欢的，就是最好的！如你愿意，可以把你喜欢的歌曲，留言推荐给我~</div>
+  </div>
+<div class="block reveal"><div class="voice-note">🎙️ 如果想听我的声音，可以点击右下角播放按钮</div></div>
+</div></section></section>
+<section id="sec-games" class="spa-sec">
+<section class="page-hero" id="top">
+  <div class="page-hero-inner">
+    <div class="kicker2">MY GAMES</div>
+    <h1>游戏厅</h1>
+    <div class="title-line"></div>
+    <p class="section-sub">玩的每一款游戏，都是我的高光时刻。</p>
+  </div>
+</section>
+<section class="page-content"><div class="page-inner"><a class="back-link" href="#/home">← 返回首页</a>
+  <div class="block reveal">
+    <h3 class="block-title">我的游戏</h3>
+    <p class="block-sub">每款游戏都配上它的高光画面</p>
+    <div class="pg-grid games-grid">
+      <div class="pg-card reveal">
+        <div class="game-img"><img src="assets/img/games/rdr2-1.jpg" alt="荒野大镖客2 游戏画面"></div>
+        <h3>荒野大镖客2 <small style="font-weight:400;color:var(--grey);font-size:12px">（Epic）</small></h3>
+        <p>亚瑟摩根永远的神！R星永远的神！E父也是神~</p>
+      </div>
+      <div class="pg-card reveal">
+        <div class="game-img"><img src="assets/img/games/sekiro-1.jpg" alt="Sekiro 只狼 游戏画面"></div>
+        <h3>Sekiro 只狼 <small style="font-weight:400;color:var(--grey);font-size:12px">（Steam）</small></h3>
+        <p>最好的音游！不解释！</p>
+      </div>
+      <div class="pg-card reveal">
+        <div class="game-img"><img src="assets/img/games/palworld-1.jpg" alt="幻兽帕鲁 游戏画面"></div>
+        <h3>幻兽帕鲁 <small style="font-weight:400;color:var(--grey);font-size:12px">（Steam）</small></h3>
+        <p>究极缝合怪，但是也是缝的真好玩~</p>
+      </div>
+      <div class="pg-card reveal">
+        <div class="game-img"><img src="assets/img/games/mhworld-1.jpg" alt="怪物猎人系列 游戏画面"></div>
+        <h3>怪物猎人系列 <small style="font-weight:400;color:var(--grey);font-size:12px">（Steam）</small></h3>
+        <p>下头太刀虾前来报到，卡表游戏再首发我是狗！</p>
+      </div>
+      <div class="pg-card reveal">
+        <div class="game-img"><img src="assets/img/games/kcd-1.jpg" alt="天国拯救系列 游戏画面"></div>
+        <h3>天国拯救系列 <small style="font-weight:400;color:var(--grey);font-size:12px">（Steam）</small></h3>
+        <p>一款让我真正的活在了波西米亚中世纪的游戏~</p>
+      </div>
+      <div class="pg-card reveal">
+        <div class="game-img"><img src="assets/img/games/zelda-1.jpg" alt="塞尔达：旷野之息 游戏画面"></div>
+        <h3>塞尔达：旷野之息 <small style="font-weight:400;color:var(--grey);font-size:12px">（Switch）</small></h3>
+        <p>塞尔达是天！</p>
+      </div>
+      <div class="pg-card reveal">
+        <div class="game-img"><img src="assets/img/games/nrfw-1.jpg" alt="恶意不息 游戏画面"></div>
+        <h3>恶意不息 <small style="font-weight:400;color:var(--grey);font-size:12px">（Steam）</small></h3>
+        <p>等待 1.0 正式版 ing</p>
+      </div>
+      <div class="pg-card reveal">
+        <div class="game-img"><img src="assets/img/games/pbz-1.jpg" alt="影之刃零 游戏画面"></div>
+        <h3>影之刃零 <small style="font-weight:400;color:var(--grey);font-size:12px">（Steam）</small></h3>
+        <p>快端上来吧！别跳票了我梁哥！</p>
+      </div></div>
+  </div>
+
+  <div class="block reveal">
+    <h3 class="block-title">我的游戏时长</h3>
+    <p class="block-sub">每一分钟，都是认真玩出来的</p>
+    <div class="playtime-card"><img src="assets/img/games/playtime.jpg" alt="游戏时长"></div>
+  </div>
+</div></section></section>
+<section id="sec-travel" class="spa-sec">
+<section class="page-hero" id="top">
+  <div class="page-hero-inner">
+    <div class="kicker2">MY TRAVEL</div>
+    <h1>旅行册</h1>
+    <div class="title-line"></div>
+    <p class="section-sub">走过的路，看过的风景，都值得好好收藏。</p>
+  </div>
+</section>
+<section class="page-content"><div class="page-inner"><a class="back-link" href="#/home">← 返回首页</a>
+  <div class="block reveal">
+    <h3 class="block-title">旅行照片墙</h3>
+    <p class="block-sub">点击照片放大看原图</p>
+    <div class="gallery">
+      <div class="g-item reveal" data-src="assets/img/travel/梅里十三峰-2026.jpg" data-cap="梅里十三峰 · 2026">
+        <img src="assets/img/travel/梅里十三峰-2026.jpg" alt="梅里十三峰">
+        <span class="cap">梅里十三峰<small>2026</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/玉龙雪山-2026.jpg" data-cap="玉龙雪山 · 2026">
+        <img src="assets/img/travel/玉龙雪山-2026.jpg" alt="玉龙雪山">
+        <span class="cap">玉龙雪山<small>2026</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/香格里拉转经筒-2026.jpg" data-cap="香格里拉 · 2026">
+        <img src="assets/img/travel/香格里拉转经筒-2026.jpg" alt="香格里拉">
+        <span class="cap">香格里拉<small>2026</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/赛里木湖-2025.jpg" data-cap="赛里木湖 · 2025">
+        <img src="assets/img/travel/赛里木湖-2025.jpg" alt="赛里木湖">
+        <span class="cap">赛里木湖<small>2025</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/汉中天坑-2024.jpg" data-cap="汉中天坑 · 2024">
+        <img src="assets/img/travel/汉中天坑-2024.jpg" alt="汉中天坑">
+        <span class="cap">汉中天坑<small>2024</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/阿坝藏族羌族自治州-2024.jpg" data-cap="阿坝 · 2024">
+        <img src="assets/img/travel/阿坝藏族羌族自治州-2024.jpg" alt="阿坝">
+        <span class="cap">阿坝<small>2024</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/可可西里-2023.jpg" data-cap="可可西里 · 2023">
+        <img src="assets/img/travel/可可西里-2023.jpg" alt="可可西里">
+        <span class="cap">可可西里<small>2023</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/拉萨-2023.jpg" data-cap="拉萨 · 2023">
+        <img src="assets/img/travel/拉萨-2023.jpg" alt="拉萨">
+        <span class="cap">拉萨<small>2023</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/珠峰大本营-2023.jpg" data-cap="珠峰大本营 · 2023">
+        <img src="assets/img/travel/珠峰大本营-2023.jpg" alt="珠峰大本营">
+        <span class="cap">珠峰大本营<small>2023</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/羊卓雍错-2023.jpg" data-cap="羊卓雍错 · 2023">
+        <img src="assets/img/travel/羊卓雍错-2023.jpg" alt="羊卓雍错">
+        <span class="cap">羊卓雍错<small>2023</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/汉中青木川-2021.jpg" data-cap="汉中青木川 · 2021">
+        <img src="assets/img/travel/汉中青木川-2021.jpg" alt="汉中青木川">
+        <span class="cap">汉中青木川<small>2021</small></span>
+      </div>
+      <div class="g-item reveal" data-src="assets/img/travel/重庆-2016至2020.jpg" data-cap="重庆 · 2016-2020">
+        <img src="assets/img/travel/重庆-2016至2020.jpg" alt="重庆">
+        <span class="cap">重庆<small>2016-2020</small></span>
+      </div></div>
+  </div>
+
+  <div class="block reveal">
+    <h3 class="block-title">旅行实况</h3>
+    <p class="block-sub">现场实况，点击播放</p>
+    <div class="video-grid"><div><video controls preload="metadata" src="assets/media/travel-live.mp4" poster="assets/img/posters/travel-live.jpg" onplay="window.parent.postMessage({type:'music-video',action:'start'},'*')" onpause="window.parent.postMessage({type:'music-video',action:'end'},'*')"></video></div></div>
+  </div>
+  <div class="block reveal">
+    <h3 class="block-title">心愿清单</h3>
+    <div style="display:flex;gap:10px;flex-wrap:wrap"><span class="chip">✨ 长白山</span><span class="chip">✨ 冈仁波齐</span></div>
+  </div>
+</div></section></section>
+<section id="sec-sports" class="spa-sec">
+<section class="page-hero" id="top">
+  <div class="page-hero-inner">
+    <div class="kicker2">MY SPORTS</div>
+    <h1>运动场</h1>
+    <div class="title-line"></div>
+    <p class="section-sub">篮球和足球，是我生活里的热血时刻。</p>
+  </div>
+</section>
+<section class="page-content"><div class="page-inner"><a class="back-link" href="#/home">← 返回首页</a>
+  <div class="block reveal">
+    <h3 class="block-title">喜欢的运动</h3>
+    <div class="pg-grid">
+      <div class="pg-card reveal">
+        <div class="em" style="background:#DFF0DC">🏀</div>
+        <h3>篮球</h3>
+        <p>任何时候，篮球都不会骗人~</p>
+        <span class="tag">热血常驻</span>
+      </div>
+      <div class="pg-card reveal">
+        <div class="em" style="background:#DFF0DC">⚽</div>
+        <h3>足球</h3>
+        <p>有我在后防，你就放心前插接球吧~</p>
+        <span class="tag">热血常驻</span>
+      </div></div>
+  </div>
+
+  <div class="block reveal">
+    <h3 class="block-title">运动实况</h3>
+    <p class="block-sub">现场直拍，点播放</p>
+    <div class="video-grid">
+      <div class="reveal">
+        <video controls preload="metadata" src="assets/media/sport-2.mp4" poster="assets/img/posters/sport-2.jpg" onplay="window.parent.postMessage({type:'music-video',action:'start'},'*')" onpause="window.parent.postMessage({type:'music-video',action:'end'},'*')"></video>
+        <p>篮球</p>
+      </div>
+      <div class="reveal">
+        <video controls preload="metadata" src="assets/media/sport-1.mp4" poster="assets/img/posters/sport-1.jpg" onplay="window.parent.postMessage({type:'music-video',action:'start'},'*')" onpause="window.parent.postMessage({type:'music-video',action:'end'},'*')"></video>
+        <p>足球</p>
+      </div></div>
+  </div>
+</div></section></section>
+<section id="sec-about" class="spa-sec">
+<section class="page-hero" id="top">
+  <div class="page-hero-inner">
+    <div class="kicker2">ABOUT ME</div>
+    <h1>关于我</h1>
+    <div class="title-line"></div>
+    <p class="section-sub">想认识我，或者聊聊音乐、游戏、旅行、运动，都欢迎！</p>
+  </div>
+</section>
+<section class="page-content"><div class="page-inner"><a class="back-link" href="#/home">← 返回首页</a>
+  <div class="block reveal">
+    <div class="about-card">
+      <h3 class="block-title">关于我</h3>
+      <p>想认识我，或者聊聊音乐、游戏、旅行、运动，都欢迎！</p>
+      <p>我是 Black，这里会看到一个有内容的我：喜欢音乐、游戏、旅行和运动。这个网站，就是我的世界一角。也希望你有机会多去看看这个世界~</p>
+      <div class="contact-chips"><span>B站 · 夜渐离</span></div>
+    </div>
+  </div>
+
+
+  <div class="block reveal guestbook-wrap">
+    <h3 class="block-title">留言板</h3>
+    <p class="block-sub">给我留句话吧，我都会认真看</p>
+    <div class="guestbook">
+      <div class="gb-form">
+        <input class="gb-name" maxlength="12" placeholder="你的昵称（可留空）">
+        <textarea class="gb-msg" rows="3" maxlength="200" placeholder="想说点什么…"></textarea>
+        <button class="gb-send" type="button">✉️ 留言</button>
+      </div>
+      <ul class="gb-list"></ul>
+    </div>
+  </div>
+</div></section></section>
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" aria-label="关闭">×</button>
+  <div class="lb-stage"><img alt=""></div>
+  <div class="lb-cap"></div>
+  <div class="lb-zoom">
+    <button class="lb-zout" aria-label="缩小">−</button>
+    <span class="lb-zval">100%</span>
+    <button class="lb-zin" aria-label="放大">＋</button>
+  </div>
+  <button class="lb-nav lb-prev">‹</button>
+  <button class="lb-nav lb-next">›</button>
+</div>
+
+<footer>
+  <div class="watermark">Black</div>
+  <h3><span class="t-sun">☀️</span><span class="t-star">✨</span> 很高兴认识你</h3>
+  <p class="f-sub">网站会一直更新，欢迎常来逛逛</p>
+  <div class="f-links">
+    <a class="f-link" href="#/music">🎵 音乐屋</a>
+    <a class="f-link" href="#/games">🎮 游戏厅</a>
+    <a class="f-link" href="#/travel">✈️ 旅行册</a>
+    <a class="f-link" href="#/sports">⚽ 运动场</a>
+  </div>
+  <a class="top-btn" href="#top">回到顶部 ↑</a>
+  <p>个人网站 · 用心记录生活</p>
+</footer>
+<button class="to-top" id="toTop" aria-label="回到顶部">↑</button>
+
+
+<div class="gplayer" id="gplayer">
+  <button class="gp-prev" id="gpPrev" aria-label="上一首">⏮</button>
+  <div class="reel"></div>
+  <button class="gp-play" id="gpPlay" aria-label="播放我的声音">
+    <span class="played">▶</span><span class="paused">⏸</span>
+  </button>
+  <button class="gp-next" id="gpNext" aria-label="下一首">⏭</button>
+  <span class="gp-tip">🎙️ 我的声音</span>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
