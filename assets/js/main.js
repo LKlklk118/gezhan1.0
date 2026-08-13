@@ -89,6 +89,7 @@
   let idx = 0;
   let playing = false;
   let audio = null;
+  let userPaused = false;
   let savedPlayer = null;
   try { savedPlayer = JSON.parse(sessionStorage.getItem('voicePlayer') || 'null'); } catch (e) {}
   if (savedPlayer && savedPlayer.idx !== undefined) idx = savedPlayer.idx % TRACKS.length;
@@ -115,7 +116,12 @@
     }
     if (v) {
       if (audio.ended) audio.currentTime = 0;
-      audio.play().catch(() => {});
+      const pr = audio.play();
+      if (pr && pr.catch) pr.catch(() => {
+        playing = false;
+        document.body.classList.remove('playing');
+        try { sessionStorage.setItem('voicePlayer', JSON.stringify({ playing, idx, t: audio.currentTime })); } catch (e) {}
+      });
     } else audio.pause();
     try { sessionStorage.setItem('voicePlayer', JSON.stringify({ playing, idx, t: audio.currentTime })); } catch (e) {}
   };
@@ -127,7 +133,7 @@
     if (auto || playing) setPlay(true);
     else try { sessionStorage.setItem('voicePlayer', JSON.stringify({ playing, idx, t: 0 })); } catch (e) {}
   };
-  if (gpPlay) gpPlay.addEventListener('click', () => setPlay(!playing));
+  if (gpPlay) gpPlay.addEventListener('click', () => { if (playing) userPaused = true; setPlay(!playing); });
   if (gpPrev) gpPrev.addEventListener('click', () => switchTo(idx - 1, true));
   if (gpNext) gpNext.addEventListener('click', () => switchTo(idx + 1, true));
   updateTip();
@@ -261,6 +267,16 @@
       if (videoPausedMusic) { videoPausedMusic = false; setPlay(true); }
     });
   });
+
+  // 进入页面自动播放音乐：被浏览器拦截时，等用户第一次点击页面任意位置再播
+  const autoStart = () => {
+    if (playing || userPaused || videoPausedMusic) return;
+    const vs = document.querySelectorAll('video');
+    for (const v of vs) { if (!v.paused) return; }
+    setPlay(true);
+  };
+  if (!savedPlayer || savedPlayer.playing !== false) autoStart();
+  addEventListener('click', autoStart, { once: true, passive: true });
 
   // 单页应用路由
   const spaSecs = document.querySelectorAll('.spa-sec');
